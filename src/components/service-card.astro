@@ -1,0 +1,24 @@
+---
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<article
+  class="overflow-hidden rounded-md border border-neutral-700/50 bg-neutral-900/40"
+>
+  <div
+    class="h-1 w-full bg-linear-to-r from-purple-700 via-pink-700 to-red-700"
+  >
+  </div>
+  <div class="p-4">
+    <slot />
+    <h4 class="text-heading mb-2 text-lg">{title}</h4>
+    <p>
+      {description}
+    </p>
+  </div>
+</article>

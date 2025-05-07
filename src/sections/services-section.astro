@@ -1,0 +1,18 @@
+---
+import ServiceCard from "@/components/service-card.astro";
+import { CARDS } from "@/lib/constants.astro";
+---
+
+<section class="mt-40 grid gap-y-10">
+  <h3 class="text-heading text-4xl font-semibold">Nuestro Servicios</h3>
+
+  <div class="grid grid-cols-3 grid-rows-2 gap-4">
+    {
+      CARDS.map((card) => (
+        <ServiceCard title={card.title} description={card.description}>
+          <card.icon class="mb-4 size-12" />
+        </ServiceCard>
+      ))
+    }
+  </div>
+</section>
