@@ -3,7 +3,11 @@ import ServiceCard from "@/components/service-card.astro";
 import { CARDS } from "@/lib/constants.astro";
 ---
 
-<section class="mt-40 grid gap-y-10">
+<section class="relative mt-40 grid gap-y-10">
+  <div
+    class="absolute -top-[15%] -left-[5%] -z-10 h-[130%] w-[110%] rounded-xl bg-black/10"
+  >
+  </div>
   <h3 class="text-heading text-4xl font-semibold">Nuestro Servicios</h3>
 
   <div class="grid grid-cols-3 grid-rows-2 gap-4">
