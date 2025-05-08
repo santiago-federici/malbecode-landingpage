@@ -1,0 +1,83 @@
+---
+import GithubIcon from "@/icons/github-icon.astro";
+import InstagramIcon from "@/icons/instagram-icon.astro";
+import LinkedinIcon from "@/icons/linkedin-icon.astro";
+import YoutubeIcon from "@/icons/youtube-icon.astro";
+---
+
+<footer class="h-full bg-black py-12">
+  <section class="wrapper">
+    <div class="grid grid-cols-4 gap-20">
+      <div class="space-y-10">
+        <div class="mb-8">
+          <img
+            src="/src/assets/logo.webp"
+            alt="Malbecode logo"
+            class="mb-4 h-auto w-72"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            quia.
+          </p>
+        </div>
+        <div class="flex gap-x-4">
+          <InstagramIcon
+            class="text-muted-foreground cursor-pointer transition duration-200 hover:text-white"
+          />
+          <YoutubeIcon
+            class="text-muted-foreground cursor-pointer transition duration-200 hover:text-white"
+          />
+          <LinkedinIcon
+            class="text-muted-foreground cursor-pointer transition duration-200 hover:text-white"
+          />
+          <GithubIcon
+            class="text-muted-foreground cursor-pointer transition duration-200 hover:text-white"
+          />
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <p class="text-heading mb-8 font-medium">Legal</p>
+        <p class="cursor-pointer transition duration-200 hover:text-white">
+          Términos y Condiciones
+        </p>
+        <p class="cursor-pointer transition duration-200 hover:text-white">
+          Política de Privacidad
+        </p>
+      </div>
+      <div class="space-y-4">
+        <p class="text-heading mb-8 font-medium">Legal</p>
+        <p class="cursor-pointer transition duration-200 hover:text-white">
+          Términos y Condiciones
+        </p>
+        <p class="cursor-pointer transition duration-200 hover:text-white">
+          Política de Privacidad
+        </p>
+      </div>
+      <div class="space-y-4">
+        <p class="text-heading mb-8 font-medium">Legal</p>
+        <p class="cursor-pointer transition duration-200 hover:text-white">
+          Términos y Condiciones
+        </p>
+        <p class="cursor-pointer transition duration-200 hover:text-white">
+          Política de Privacidad
+        </p>
+      </div>
+    </div>
+    <div class="bg-muted my-10 h-px w-full"></div>
+    <div class="flex items-center justify-between">
+      <p class="text-muted-foreground">
+        © 2025 Malbecode. Algunos derechos reservados.
+      </p>
+
+      <nav
+        class="text-muted-foreground space-x-4 [&>*]:transition [&>*]:duration-200 [&>*]:hover:text-white"
+      >
+        <a href="#">Home</a>
+        <a href="#services">Servicios</a>
+        <a href="#us">Nosotros</a>
+        <a href="#testimonials">Testimonios</a>
+      </nav>
+    </div>
+  </section>
+</footer>
