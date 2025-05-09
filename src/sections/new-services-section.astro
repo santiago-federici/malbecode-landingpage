@@ -1,0 +1,44 @@
+---
+import MiniWeb from "@/components/features-cards/mini-web.astro";
+import "@/styles/features-cards.css";
+---
+
+<section class="mt-40 space-y-20">
+  <h3 class="text-heading text-center text-4xl font-semibold">
+    Nuestro Servicios
+  </h3>
+
+  <div class="grid grid-cols-2 grid-rows-2 gap-10">
+    <article
+      class="relative col-span-2 h-[500px] overflow-hidden rounded-md border border-neutral-700/50 bg-neutral-900/40 p-4"
+    >
+      <h4 class="text-heading mb-2 text-6xl font-bold">AUTOMATIZACION</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magni error
+        ducimus autem quas, sunt nesciunt veniam suscipit
+      </p>
+    </article>
+
+    <article
+      class="relative col-span-1 h-[500px] overflow-hidden rounded-md border border-neutral-700/50 bg-neutral-900/40 p-4"
+    >
+      <h4 class="text-heading mb-2 text-6xl font-bold">DESARROLLO WEB</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magni error
+        ducimus autem quas, sunt nesciunt veniam suscipit
+      </p>
+
+      <MiniWeb />
+    </article>
+
+    <article
+      class="col-span-1 h-[500px] overflow-hidden rounded-md border border-neutral-700/50 bg-neutral-900/40 p-4"
+    >
+      <h4 class="text-heading mb-2 text-6xl font-bold">SOFTWARE A MEDIDA</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magni error
+        ducimus autem quas, sunt nesciunt veniam suscipit
+      </p>
+    </article>
+  </div>
+</section>
