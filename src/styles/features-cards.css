@@ -57,6 +57,36 @@
   }
 }
 
+/* Mini Automation Styles */
+.mini-automation-node {
+  animation: nodeGlow 4s ease-in-out infinite;
+}
+
+@keyframes nodeGlow {
+  0%, 100% {
+    filter: brightness(1);
+    transform: scale(1);
+  }
+  50% {
+    filter: brightness(1.5);
+    transform: scale(1.1);
+  }
+}
+
+.mini-automation-line {
+  fill: none;
+  stroke: #444;
+  stroke-width: 1;
+  stroke-dasharray: 10;
+  animation: flowLine 2s linear infinite;
+}
+
+@keyframes flowLine {
+  to {
+    stroke-dashoffset: -20;
+  }
+}
+
 .mini-dashboard-color-bubble-1 {
   animation: changeBorderColor1 10s ease-in-out infinite;
 }
