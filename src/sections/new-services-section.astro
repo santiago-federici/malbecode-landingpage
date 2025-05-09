@@ -1,6 +1,7 @@
 ---
 import MiniWeb from "@/components/features-cards/mini-web.astro";
 import MiniAutomation from "@/components/features-cards/mini-automation.astro";
+import MiniDashboard from "@/components/features-cards/mini-dashboard.astro";
 import "@/styles/features-cards.css";
 ---
 
@@ -34,13 +35,14 @@ import "@/styles/features-cards.css";
     </article>
 
     <article
-      class="col-span-1 h-[500px] overflow-hidden rounded-md border border-neutral-700/50 bg-neutral-900/40 p-4"
+      class="relative col-span-1 h-[500px] overflow-hidden rounded-md border border-neutral-700/50 bg-neutral-900/40 p-4"
     >
       <h4 class="text-heading mb-2 text-6xl font-bold">SOFTWARE A MEDIDA</h4>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magni error
         ducimus autem quas, sunt nesciunt veniam suscipit
       </p>
+      <MiniDashboard />
     </article>
   </div>
 </section>

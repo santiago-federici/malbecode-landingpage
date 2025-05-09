@@ -87,121 +87,22 @@
   }
 }
 
-.mini-dashboard-color-bubble-1 {
-  animation: changeBorderColor1 10s ease-in-out infinite;
-}
-
-@keyframes changeBorderColor1 {
-  0%,
-  20% {
-    border: 1px solid oklch(44.2% 0.017 285.786);
-  }
-  30%,
-  60% {
-    border: 1px solid oklch(85.2% 0.199 91.936);
-  }
-  70%,
-  100% {
-    border: 1px solid oklch(44.2% 0.017 285.786);
-  }
-}
-
-.mini-dashboard-color-bubble-2 {
-  animation: changeBorderColor2 10s ease-in-out infinite;
-}
-
-@keyframes changeBorderColor2 {
-  0%,
-  60% {
-    border: 1px solid oklch(44.2% 0.017 285.786);
-  }
-  70%,
-  100% {
-    border: 1px solid oklch(85.2% 0.199 91.936);
-  }
-}
-
-.mini-dashboard-color-bubble-3 {
-  animation: changeBorderColor3 10s ease-in-out infinite;
-}
-
-@keyframes changeBorderColor3 {
-  0%,
-  20% {
-    border: 1px solid oklch(85.2% 0.199 91.936);
-  }
-  30%,
-  100% {
-    border: 1px solid oklch(44.2% 0.017 285.786);
-  }
-}
-
+/* Mini Dashboard Styles */
 .mini-dashboard-card-color {
-  animation: changeContentColor 10s ease-in-out infinite;
+  animation: cardColorChange 8s ease-in-out infinite;
 }
 
-@keyframes changeContentColor {
-  0%,
-  20% {
-    /* @apply bg-purple-700/60; */
-    background: oklch(49.6% 0.265 301.924);
+@keyframes cardColorChange {
+  0%, 30% {
+    background: oklch(49.6% 0.265 301.924 / 0.2);
+    border-color: oklch(49.6% 0.265 301.924 / 0.4);
   }
-  30%,
-  60% {
-    /* @apply bg-red-700/60; */
-    background: oklch(50.5% 0.213 27.518);
+  40%, 70% {
+    background: oklch(50.5% 0.213 27.518 / 0.2);
+    border-color: oklch(50.5% 0.213 27.518 / 0.4);
   }
-  70%,
-  100% {
-    /* @apply bg-green-700/60; */
-    background: oklch(52.7% 0.154 150.069);
+  80%, 100% {
+    background: oklch(52.7% 0.154 150.069 / 0.2);
+    border-color: oklch(52.7% 0.154 150.069 / 0.4);
   }
-}
-
-.mini-dashboard-tr-corner {
-  background: black;
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  top: -40px;
-  right: -40px;
-  rotate: -45deg;
-}
-
-.mini-dashboard-bl-corner {
-  position: absolute;
-  left: -10px;
-  bottom: -20px;
-  background: black;
-  width: 200px;
-  height: 50px;
-  transform: skew(45deg);
-}
-
-.mini-dashboard-bl-corner::before,
-.mini-dashboard-bl-corner::after {
-  content: "";
-  position: absolute;
-}
-
-.mini-dashboard-bl-corner::before {
-  /* @apply bg-primary; */
-  background: var(--color-primary);
-  border-bottom-left-radius: 6px;
-  box-shadow: -10px 10px black;
-  width: 20px;
-  height: 20px;
-  transform: skew(-45deg);
-  top: -20px;
-  left: 45px;
-  background-image: url("/noise.svg");
-}
-
-.mini-dashboard-bl-corner::after {
-  background: black;
-  width: 60px;
-  height: 30px;
-  top: 0;
-  right: -20px;
-  border-top-right-radius: 10% 10%;
 }
